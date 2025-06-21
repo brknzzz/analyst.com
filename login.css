@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.header img {
+  width: 24px;
+  color: #06C8AB;
+  justify-self: center;
+  margin: auto;
+  margin-right: 7px;
+}
+
+.logo {
+  font-size: 32px;
+  color: #06C8AB;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 18px;
+  color: #06C8AB;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40px;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #06C8AB;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+  transition: 0.3s;
+}
+
+.backgroundpic {
+  position: absolute;
+  top: 15%;
+  left: 47%;
+  width: 500px;
+}
+
+.backgrounddesc {
+  position: absolute;
+  top: 35%;
+  left: 13%;
+  justify-self: center;
+}
+
+.backgrounddesc h1 {
+  font-size: 100px;
+  color: #06C8AB;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.backgrounddesc h3 {
+  margin-top: 0;
+  padding: 0;
+}
+
+.buttonclass {
+  margin: 30px;
+  display: flex;
+}
+
+.backgrounddesc button {
+  padding: 12px;  
+  border-radius: 30px;
+  color: #06C8AB;
+  border-color: #06C8AB;
+  border: 2px solid;
+  background: none;
+}
+
+.backgrounddesc button:hover {
+  color: white;
+  border: 2px white solid;
+  background: #06C8AB;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.marsud {
+  width: 25px;
+}
+
+.dropdown { 
+  position: relative;
+  width: 60px;
+  margin-right: 10px;
+}
+
+.dropdown * {
+  box-sizing: border-box;
+}
+
+.select {
+  background-color: rgb(255, 255, 255);
+  color: #06C8AB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #06C8AB solid;
+  border-radius: 30px;
+  padding: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.select .marsud {
+  margin: auto;
+}
+.select span {
+  font-size: 14px;
+  margin: auto;
+  margin-top: 3px;
+}
+
+.select:hover {
+  background-color: #06C8AB;
+  color: white;
+}
+
+.caret {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #06C8AB;
+  transition: 0.3s;
+}
+
+.select:hover .caret{
+  border-top: 6px solid white;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.menu {
+  list-style: none;
+  padding: 6px;
+  background: #06C8AB;
+  border: 1px #06C8AB solid;
+  border-radius: 30px;
+  color: white;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+
+.menu li {
+  padding: 6px;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: auto;
+  justify-self: center;
+}
+
+.menu li:hover {
+  background: #0f927e;
+}
+
+.active {
+  background-color: #13ac95;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+  transition: 0.3s;
+}

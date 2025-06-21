@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<!---["838C90","06C8AB","06C8AB","54CFBE","B5D1D0"]-->
+<body>
+    <header class="header">
+        <nav>
+            <img src="imageimage/svlogo.svg">
+            <a href="login.html" class="logo">Analyst</a>
+        </nav>
+
+        <nav class="navbar">
+            <a href="home.html">Start</a>
+        </nav>
+    </header>
+    <img class="backgroundpic" src="bglogo.png">
+    <div class="backgrounddesc">
+        <h1>Analyst</h1>
+        <h3>for your business.</h3>
+        <div class="buttonclass">
+            <div class="dropdown">
+                <div class="select">
+                    <span class="selected"><img class="marsud" src="https://static.wixstatic.com/media/2da187_5a023f3802a34368ae4b94ddb43bd84d~mv2.png"></span>
+                    <div class="caret"></div>
+                </div>
+                <ul class="menu">
+                    <li class="active"><img class="marsud" src="https://static.wixstatic.com/media/2da187_5a023f3802a34368ae4b94ddb43bd84d~mv2.png"></li>
+                </ul>
+            </div>
+            <button onclick="location.href = 'home.html'" id="buttonactivator"> Analyze your store </button>
+        </div>
+    <div class="bgpiclist"></div>
+</body>
+<script>
+    const dropdowns = document.querySelectorAll('.dropdown')
+    dropdowns.forEach(dropdown => {
+        const select = dropdown.querySelector('.select');
+        const caret = dropdown.querySelector('.caret');
+        const menu = dropdown.querySelector('.menu');
+        const options = dropdown.querySelectorAll('.menu li');
+        const selected = dropdown.querySelector('.selected');
+
+        select.addEventListener('click', () => {
+            caret.classList.toggle('caret-rotate');
+            menu.classList.toggle('menu-open');
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                caret.classList.remove('caret-rotate');
+                menu.classList.remove('menu-open');
+                options.forEach(option => {
+                    option.classList.remove('active');
+                });
+                option.classList.add('active');
+            });
+        })
+    })
+</script>
+</html>

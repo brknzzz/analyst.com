@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f7f7;
+    background-size: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 40px;
+    background: #06C8AB;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+  
+.header img {
+    width: 24px;
+    filter: contrast(100%);
+    justify-self: center;
+    margin: auto;
+    margin-right: 7px;
+}
+  
+.logo {
+    font-size: 32px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+  
+.navbar a {
+    position: relative;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+  
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+}
+  
+.navbar a:hover::before {
+    width: 100%;
+    transition: 0.3s;
+}
+
+.introdesc {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    margin: auto;
+}
+
+.introdesc div {
+    height: 200px;
+}
+
+.panel1 {
+    background: #2C6BD0;
+    padding: 15px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    width: 31%;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-left: 2%
+}
+
+.panel1:hover {
+    background-color: #2a5eb1;
+    transition: 0.2s;
+}
+
+.panel1:hover img {
+    height: 170px;
+    transition: 0.2s;
+    transform: translate(23%, -11%);
+}
+
+.panel1 img {
+    position: absolute;
+    height: 150px;
+    left: 0%;
+    bottom: 0%;
+    margin-right: 10px;
+    transition: 0.2s;
+    transform: translate(30%, -20%);
+}
+
+.panel1 .desc {
+    padding: 20px;
+    z-index: 1000;
+}
+
+.panel1 h2, .panel1 a {
+    color: white;
+}
+
+.panel2 {
+    height: 200px;
+    background-color: #2ba3da;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 20px;
+    width: 31%;
+    transition: 0.2s;
+}
+
+.panel2 img {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 200px;
+    transition: 0.2s;
+    transform: translateX(60%);
+}
+
+.panel2:hover {
+    background-color: #2892c4;
+}
+
+.panel2:hover img {
+    height: 213px;
+    transition: 0.2s;
+}
+
+.panel2 .desc {
+    margin: 20px;
+    z-index: 1000;
+    position: absolute;
+    top: 55%;
+    justify-self: center;
+}
+
+.desc h4, .desc p {
+    color: white;
+}
+
+.panel3 {
+    background: #0E798B;
+    padding: 15px;
+    display: flex;
+    border-radius: 20px;
+    position: relative;
+    width: 31%;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-left: 20px;
+}
+
+.panel3:hover {
+    background-color: #0c6474;
+    transition: 0.2s;
+}
+
+.panel3:hover img {
+    height: 160px;
+    transform: translate(-23%, -13%);
+    transition: 0.2s;
+}
+
+.panel3 img {
+    position: absolute;
+    height: 140px;
+    right: 0%;
+    bottom: 0%;
+    transform: translate(-30%, -20%);
+    margin-right: 10px;
+    transition: 0.2s;
+}
+
+.panel3 .desc {
+    padding: 20px;
+    z-index: 1000;
+}
+
+.panel3 h2, .panel3 a {
+    color: white;
+}
+
+.bodymainmain {
+    padding-left: 2%;
+    display: flex;
+}
+
+.bodymain1 {
+    width: 50%;
+}
+
+.bodymain1 h2::before {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #21d309;
+}
+
+.bodymainmain .beforeh2 {
+    position: relative;
+    width: max-content;
+}
+
+.bestsellerlist, .mostprofitablelist, .worstproductlist {
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.bestselleritem, .mostprofitableitem {
+    display: flex;
+}
+
+.bestselleritem img, .mostprofitableitem img{
+    height: 240px;
+    position: absolute;
+    right: 0%;
+    transform: translateX(37%);
+    bottom: -12%;
+    transition: 0.2s;
+}
+
+.bodymain1 .item1:hover img, .bodymain1 .item2:hover img, .bodymain1 .item3:hover img {
+    height: 255px;
+    transition: 0.2s;
+}
+
+.bestselleritem .item1, .bestselleritem .item2, .bestselleritem .item3 {
+    position: relative;
+    padding: 5px;
+    width:32%;
+    height: 200px;
+    overflow: hidden;
+    margin: 2px;
+    transition: 0.2s;
+}
+
+.mostprofitableitem .item1, .mostprofitableitem .item2, .mostprofitableitem .item3 {
+    position: relative;
+    padding: 5px;
+    width: 32%;
+    height: 200px;
+    overflow: hidden;
+    margin: 2px;
+    transition: 0.2s;
+}
+
+.bestsellerlist .descr, .mostprofitablelist .descr {
+    padding: 20px;
+    z-index: 5;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.bestsellerlist h3, .bestselleritem p {
+    color: white;
+    transition: 0.2s;
+}
+
+.mostprofitablelist h3, .mostprofitableitem p {
+    color: white;
+    transition: 0.2s;
+}
+
+.bestsellerlist .item1 {
+    background-color: #5c3a2c;
+    border-radius: 20px 0 0 20px;
+}
+
+.bestsellerlist .item1:hover {
+    background-color: #422b21;
+    transition: 0.2s;
+}
+
+.bestsellerlist .item2 {
+    background-color: #d9a444;
+}
+
+.bestsellerlist .item2:hover {
+    background-color: #c4953f;
+    transition: 0.2s;
+}
+
+.bestsellerlist .item3 {
+    background-color: #E17335;
+    border-radius: 0 20px 20px 0;
+}
+
+.bestsellerlist .item3:hover {
+    background-color: #c96830;
+    transition: 0.2s;
+}
+
+.item1:hover p, .item2:hover p, .item3:hover p {
+    font-size: large;
+    transition: 0.2s;
+}
+
+.mostprofitablelist .item1 {
+    background-color: #c4432f;
+    border-radius: 20px 0 0 20px;
+}
+
+.mostprofitablelist .item1:hover {
+    background-color: #9e392a;
+    transition: 0.2s;
+}
+
+.mostprofitablelist .item2 {
+    background-color: #d9a444;
+}
+
+.mostprofitablelist .item2:hover {
+    background-color: #c4953d;
+    transition: 0.2s;
+}
+
+.mostprofitablelist .item3 {
+    background-color: #E17335;
+    border-radius: 0 20px 20px 0;
+}
+
+.mostprofitablelist .item3:hover {
+    background-color: #c96830;
+    transition: 0.2s;
+}
+
+.bodymain2 {
+    display: flex;
+    width: 50%;
+}
+
+.bodymain2 h2::before {
+    content: '';
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #f3493d;
+}
+
+.worstproductlist {
+    width: 100%;
+}
+
+.worstproductitem {
+    width: 100%;
+}
+
+.worstproductitem .item1, .worstproductitem .item2, .worstproductitem .item3 {
+    position: relative;
+    padding: 5px;
+    width: 93%;
+    height: 150px;
+    overflow: hidden;
+    margin: 2px;
+    transition: 0.2s;
+}
+
+.worstproductitem img{
+    height: 150px;
+    position: absolute;
+    right: 0%;
+    transition: 0.2s;
+}
+
+.worstproductitem .descr {
+    padding: 20px;
+    z-index: 5;
+    position: absolute;
+    transition: 0.2s;
+}
+
+.worstproductlist h3, .worstproductlist p {
+    color: white;
+    transition: 0.2s;
+}
+
+.worstproductlist .item1 {
+    background-color: #33961c;
+    border-radius: 20px 20px 0 0;
+}
+
+.worstproductlist .item1:hover {
+    background-color: #2b7c19;
+    transition: 0.2s;
+}
+
+.worstproductlist .item2 {
+    background-color: #6E2F0C;
+}
+
+.worstproductlist .item2:hover {
+    background-color: #572408;
+    transition: 0.2s;
+}
+
+.worstproductlist .item3 {
+    background-color: #F2BF27;
+    border-radius: 0 0 20px 20px;
+}
+
+.worstproductlist .item3:hover {
+    background-color: #ddaf25;
+    transition: 0.2s;
+}
+
+.bodymain2 .item1:hover img, .bodymain2 .item2:hover img, .bodymain2 .item3:hover img {
+    height: 190px;
+    transition: 0.2s;
+}
